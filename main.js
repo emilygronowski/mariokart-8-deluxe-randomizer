@@ -11,25 +11,28 @@ const insertCharacter = ["Mario", "Luigi", "Peach", "Daisy", "Rosalina", "Tanook
 const insertKart = ["Standard Kart"]; 
 const insertTires = ["Standard"];
 const insertGlider = ["Super Glider"];
-const buildText = `Character: ${insertCharacter} Kart: ${insertKart} Tires: ${insertTires} Glider: ${insertGlider}`;
+const buildText = `Character: :insertCharacter: Kart: :insertKart: Tires: :insertTires: Glider: :insertGlider:`;
 
-randomize.addEventListener('click', result);
+
+const myButton = document.getElementById("myButton");
+myButton.addEventListener("click", function() {
+    result()
+    });
 
 function result() {
     let newBuild = buildText;
 
-    const characterInsert = randomValueFromArray(insertCharacter);
+    const characterInsert = randomValueFromArray(insertCharacter);  
     const kartInsert = randomValueFromArray(insertKart);
     const tiresInsert = randomValueFromArray(insertTires);
     const gliderInsert = randomValueFromArray(insertGlider);
 
-    if(buildMaker.value !== '') {
-        const name = buildMaker.value;
-    }
+    newBuild = newBuild
+            .replace(":insertCharacter:", characterInsert)
+            .replace(":insertKart:", kartInsert)
+            .replace(":insertTires:", tiresInsert)
+            .replace(":insertGlider:", gliderInsert)
 
-    console.log(newBuild);
-
+    console.log(newBuild)
     return newBuild;
 }
-
-result()
