@@ -14,14 +14,39 @@
     h1, p {
         text-align: center;
     }
+
+    .flex-container {
+        display: flex;
+        justify-content: center;
+        margin: 1em 0;
+    }
+
+    .flex-container p {
+        margin: 0;
+    }
 </style>
 
 <h1>Mario Kart 8 Deluxe Kart Randomizer</h1>
 
-<p>Character:</p>
-<p>Kart:</p>
-<p>Wheels:</p>
-<p>Glider:</p>
+<div class="flex-container">
+    <p>Character:&nbsp;</p>
+    <p id="character"></p>
+</div>
+
+<div class="flex-container">
+    <p>Kart:&nbsp;</p>
+    <p id="kart"></p>
+</div>
+
+<div class="flex-container">
+    <p>Wheels:&nbsp;</p>
+    <p id="tires"></p>
+</div>
+
+<div class="flex-container">
+    <p>Glider:&nbsp;</p>
+    <p id="glider"></p>
+</div>
 
 <div style="text-align: center;">
 	<button id="myButton">Randomize!</button>
