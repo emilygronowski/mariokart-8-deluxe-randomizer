@@ -4,7 +4,16 @@ function randomValueFromArray(array) {
 }
 
 const insertCharacter = ["Mario"];
-const insertKart = ["Standard Kart"]; 
+const insertKart = ["Standard Kart", "Pipe Frame", "Mach 8", "Steel Driver", "Cat Cruiser", 
+                    "Circuit Special", "Tri-Speeder", "Badwagon", "Prancer", "Biddybuggy",
+                    "Landship", "Sneeker", "Sports Coupe", "Gold Standard", "GLA",
+                    "W 25 Silver Arrow", "300 SL Roadster", "Blue Falcon", "Tanooki Kart",
+                    "B Dasher", "Streetle", "P-Wing", "Koopa Clown", "Standard Bike",
+                    "Comet", "Sports Bike", "The Duke", "Flame Rider", "Varmint", "Mr. Scooty",
+                    "Jet Bike", "Yoshi Bike", "Master Cycle", "Master Cycle Zero", "City Tripper", 
+                    "Standard ATV", "Wild Wiggler", "Teddy Buggy", "Bone Rattler", "Splat Buggy",
+                    "Inkstriker"]; 
+                    
 const insertTires = ["Standard", "Monster", "Roller", "Slim", "Slick", "Metal", "Button", "Off-Road",
                     "Sponge", "Wood", "Cushion", "Blue Standard", "Hot Monster", "Azure Roller", 
                     "Crimson Slim", "Cyber Slick", "Retro Off-Road", "Gold Tires", "GLA Tires", 
