@@ -3,10 +3,16 @@ function randomValueFromArray(array) {
     return array[random];
 }
 
-const insertCharacter = ["Mario", "Luigi", "Peach", "Daisy", "Rosalina", "Tanooki Mario", "Cat Peach", "Birdo"];
+const insertCharacter = ["Mario"];
 const insertKart = ["Standard Kart"]; 
-const insertTires = ["Standard"];
-const insertGlider = ["Super Glider"];
+const insertTires = ["Standard", "Monster", "Roller", "Slim", "Slick", "Metal", "Button", "Off-Road",
+                    "Sponge", "Wood", "Cushion", "Blue Standard", "Hot Monster", "Azure Roller", 
+                    "Crimson Slim", "Cyber Slick", "Retro Off-Road", "Gold Tires", "GLA Tires", 
+                    "Triforce Tires", "Ancient Tires", "Leaf Tires"];
+
+const insertGlider = ["Super Glider", "Cloud Glider", "Wario Wing", "Waddle Wing", "Peach Parasol", 
+                      "Parachute", "Parafoil", "Flower Glider", "Bowser Kite", "Plane Glider", 
+                      "MKTV Parafoil", "Gold Glider", "Hylian Kite", "Paraglider", "Paper Glider"];
 
 const myButton = document.getElementById("myButton");
 myButton.addEventListener("click", function() {
